@@ -3,28 +3,12 @@
 {% block content %}
     <div class="blog-presentation">
     
-    <div class="blog-header">
-        <div class="blog-title-line">
-        <h1 id="blog-main-title"> Jack Blog </h1>
-            <div class="profile-pic-box">
-            <img src="img/profile_n.png" alt="profile-pic" class="profile-pic">
-            </div>
-        </div>
-        <div class="title-link-section">
-            <a href="" class="title-link"> Home </a>
-            <a href="blog/" class="title-link"> Articles </a>
-            <a href="contents/contact.html" class="title-link"> Contact </a>
-        </div>
-    </div>
-
-
-    <hr class="blog-separator">
 
     <h1 class="blog-article-title">  Welcome to my blog </h1>
 
     <figure class="blog-banner">
     <img src="img/banner.jpg" alt="banner" class="banner-img">
-    <figcaption class="banner-caption"> This is a caption </figcaption>
+    <figcaption class="banner-caption"> A sunset </figcaption>
     </figure>
    
     <article>
@@ -63,16 +47,12 @@
 
     </div>
 
-    <hr>
-
-
-</body>
 {% endblock content %}
 
+{% block header %}
+{% include "header.html" %}
+{% endblock header %}
+
 {% block footer %}
-    <footer class="blog-footer">
-        <p> Discord: jack.o.lantern. </p>
-        <p id="mail-footer-text"> Mail:  jack.blog@protonmail.com</p>
-    </footer>
+{% include "footer.html" %}
 {% endblock footer %}
-```
