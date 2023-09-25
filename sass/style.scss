@@ -91,7 +91,7 @@ body
     text-rendering: optimizeLegibility;
 }
 
-.blog-presentation
+#blog-page
 {
     background-color: #eee;
     display: flex;
@@ -247,7 +247,7 @@ figcaption {
 }
 
 
-blockquote{
+blockquote {
     display:block;
     background: #fff;
     padding: 15px 20px 15px 25px;
@@ -265,7 +265,7 @@ blockquote{
     
     /*Borders - (Optional)*/
     border-left: 10px solid #5a4a73;
-  }
+}
   
   blockquote::before{
     content: ""; /*Unicode for Left Double Quote*/
