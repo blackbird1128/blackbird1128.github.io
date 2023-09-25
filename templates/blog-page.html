@@ -1,12 +1,19 @@
-{% extends "base.html" %}
+{% extends "blog-base.html" %}
 
 {% block content %}
+<div id="blog-page">
 <article>
-<h1 class="title">
+<h1 class="blog-article-title">
   {{ page.title }}
 </h1>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
-</article>
+<p id="article-date"><strong>{{ page.date }}</strong></p>
 {{ page.content | safe }}
+</article>
+</div>
 {% endblock content %}
+
+
+{% block header %}
+{% include "header.html" %}
+{% endblock header %}
 
